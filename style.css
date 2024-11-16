@@ -7,7 +7,7 @@ body{
 /* Estilização da seção Início */
 .section-inicio {
     min-height: 95vh;
-    background: linear-gradient(135deg, #1a1a1a, #cccccc); 
+    background: linear-gradient(135deg, #000000, #434343); 
     align-items: center;
     justify-content: center;
     color: #fff;
@@ -318,31 +318,9 @@ body{
     }
 }
 
-@media (max-width: 768px) {
-    .timeline {
-        height: 8px;
-        width: 100%; /* Garantir que a barra ocupe toda a largura */
-    }
-
-    .timeline-progress {
-        transition: width 1.5s ease-in-out;
-    }
-
-    .timeline-labels {
-        font-size: 0.9rem;
-        display: flex;
-        justify-content: space-between;
-        padding-top: 5px; /* Ajustar o espaçamento */
-    }
-
-    .timeline-labels span {
-        font-size: 0.9rem;
-    }
-}
-
 @media (max-width: 992px) {
     .section-about {
-        width: 80%; /* Ajustar para 80% em dispositivos médios */
+        width: 80%; /* Ajuste para dispositivos médios */
         padding: 60px 20px;
         margin-top: 30px;
     }
@@ -363,6 +341,11 @@ body{
 }
 
 @media (max-width: 768px) {
+    .section-about {
+        width: 90%; /* Ajuste para dispositivos pequenos */
+        padding: 40px 15px;
+    }
+
     .icon-grid {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -380,11 +363,31 @@ body{
     .icon-item p {
         font-size: 1rem;
     }
+
+    .timeline {
+        height: 8px;
+        width: 100%;
+    }
+
+    .timeline-progress {
+        transition: width 1.5s ease-in-out;
+    }
+
+    .timeline-labels {
+        font-size: 0.9rem;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 5px;
+    }
+
+    .timeline-labels span:nth-child(2) {
+        display: none; /* Remove o "Intermediário" */
+    }
 }
 
 @media (max-width: 480px) {
     .section-about {
-        width: 100%;
+        width: 100%; /* Total para dispositivos muito pequenos */
         padding: 20px 10px;
     }
 
