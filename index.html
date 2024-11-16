@@ -3,17 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portifólio - Iago Miguel</title>
 
     <!-- Link para o CSS do Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     
     <!-- Link CSS personalizado -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Link para o Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Link para Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="shortcut icon" type="imagex/png" href="img/icon.png">
 </head>
 <body>
+    
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">Iago Miguel</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-expanded="false" aria-label="Toggle navigation"> 
@@ -28,7 +36,7 @@
                             <button class="nav-link btn btn-link" data-scroll-to="softskills">SoftSkills</button>
                         </li>
                         <li>
-                            <button class="nav-link btn btn-link" data-scroll-to="experiencias">Experiências</button>
+                            <button class="nav-link btn btn-link" data-scroll-to="experiencia">Experiências</button>
                         </li>
                     </ul>
                 </div>
@@ -38,18 +46,168 @@
 
     <!-- Inicio Inicio -->
     <section id="inicio" class="d-flex align-items-center section-inicio">
- 
-    </section>
-
-    <!-- Inicio SoftSkills -->
-    <section id="softskills">
-        
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Texto à esquerda -->
+                <div class="col-md-6 text-start fade-in">
+                    <h1>Olá, eu sou Iago!</h1>
+                    <p>Sou estudante de Análise e Desenvolvimento de Sistemas, apaixonado por tecnologia e criação de soluções modernas.</p>
+                </div>
+                <!-- Foto à direita -->
+                <div class="col-md-6 text-end fade-in"> 
+                    <img src="img/eu.jpg" class="img-fluid" style="border-radius: 25px; height: 500px;">
+                </div>
+                
+            </div>
+        </div>
     </section>
     
-    <!-- Inicio Experiencias -->
-    <section id="experiencias">
-        
+
+    <section id="softskills" class="section-softskills py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 fade-in">SoftSkills e Hobbies</h2>
+    
+            <div class="row justify-content-center mb-5">
+                <div class="col-md-8 text-start fade-in">
+                    <p>Sou proativo, comunicativo e trabalho bem em equipe. Tenho facilidade para resolver problemas e uma forte capacidade de adaptação a novos desafios.</p>
+                    <p>Além disso, minha paixão por tecnologia me impulsiona a aprender continuamente e aplicar os conhecimentos em projetos práticos.</p>
+                </div>
+            </div>
+    
+            <!-- Grid de ícones -->
+            <div class="icon-grid">
+                <!-- Ícone de Java -->
+                <div class="icon-item">
+                    <div class="icon-container">
+                        <i class="fab fa-java"></i>
+                    </div>
+                    <p>Java</p>
+                </div>
+    
+                <!-- Ícone de JavaScript -->
+                <div class="icon-item">
+                    <div class="icon-container">
+                        <i class="fab fa-js-square"></i>
+                    </div>
+                    <p>JavaScript</p>
+                </div>
+    
+                <!-- Ícone de HTML -->
+                <div class="icon-item">
+                    <div class="icon-container">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <p>HTML</p>
+                </div>
+    
+                <!-- Ícone de CSS -->
+                <div class="icon-item">
+                    <div class="icon-container">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <p>CSS</p>
+                </div>
+    
+                <!-- Ícone de Banco de Dados -->
+                <div class="icon-item">
+                    <div class="icon-container">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <p>Banco de Dados</p>
+                </div>
+    
+                <!-- Ícone de PHP -->
+                <div class="icon-item">
+                    <div class="icon-container">
+                        <i class="fab fa-php"></i>
+                    </div>
+                    <p>PHP</p>
+                </div>
+            </div>
+    
+            <div class="row justify-content-center mt-5">
+                <div class="col-md-8 text-start fade-in">
+                    <h3>Nível de inglês</h3>
+                    <div class="timeline">
+                        <div class="timeline-progress" style="width: 75%"></div>
+                        <div class="timeline-labels">
+                            <span>Básico</span>
+                            <span>Intermediário</span>
+                            <span>Avançado</span>
+                            <span>Fluente</span>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      
     </section>
+    <br><br>
+    
+    <br><br>
+    <section id="sobre-mim" class="section-about py-5 fade-in">
+        <div class="container">
+            <div class="row">
+                <!-- Texto à esquerda -->
+                <div class="col-md-6">
+                    <h3>Sobre Mim</h3>
+                    <p>Eu sou alguém que busca sempre o equilíbrio entre trabalho e lazer. A academia é onde encontro motivação para melhorar meu condicionamento físico e seguir desafiando meus limites. Nos momentos de lazer, sou apaixonado por jogos de computador, uma forma de relaxar e me divertir com amigos. Quando não estou treinando ou jogando, gosto de estar com minha namorada, aproveitando os bons momentos e criando memórias juntos. Ah, e não posso deixar de mencionar que sou corinthiano, com muito orgulho!</p>
+                </div>
+                <!-- Foto à direita -->
+                <div class="col-md-6">
+                    <img src="img/amor.jpg" >
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+    
+    <!-- Inicio Experiencias -->
+    <section id="experiencia" class="section-experiencia py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 fade-in">Minha Experiência</h2>
+            
+            <div class="row justify-content-center align-items-center mb-5">
+                <!-- Coluna com o texto -->
+                <div class="col-md-8 text-start fade-in">
+                    <h3>Analista de Sistemas e Dados - Santos e Porto</h3>
+                    <p>Atualmente, sou Analista de Sistemas e Dados na Santos e Porto, onde trabalho com o desenvolvimento de sistemas para otimizar a gestão de processos e dados. Tenho experiência em análise, estruturação e implementação de soluções tecnológicas para melhorar o desempenho organizacional.</p>
+                    <p>Entre meus projetos mais notáveis, destaco o desenvolvimento de programas em Java, voltados para sistemas de gestão, controle de dados e automação de processos, com foco em desempenho e escalabilidade.</p>
+                    <p>Além disso, sou responsável por projetos de banco de dados, garantindo a integridade e eficiência das informações. Também realizo a instalação de sistemas de telemetria em clientes da empresa, fornecendo soluções tecnológicas avançadas para monitoramento e controle remoto de empilhadeiras, paleteiras e rebocadores.</p>
+                </div>
+                
+                <!-- Coluna com a imagem à direita -->
+                <div class="col-md-4 fade-in">
+                    <img src="img/exp.jpg"/>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Rodapé -->
+<footer class="footer bg-dark text-light py-4">
+    <div class="container text-center">
+        <p class="mb-3">Conecte-se comigo nas redes sociais:</p>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/iago-miguel-291175303/" target="_blank" class="social-icon">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://www.instagram.com/iago_om" target="_blank" class="social-icon">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://github.com/IagoMig1" target="_blank" class="social-icon">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+        <p class="mt-3">Entre em contato comigo por e-mail: <a href="mailto:iago.miguel3008@outlook.com">iago.miguel3008@outlook.com</a></p>
+        <p class="mt-3">© 2024 Todos os direitos reservados</p>
+    </div>
+</footer>
+
+    
 
 
 
