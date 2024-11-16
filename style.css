@@ -416,3 +416,46 @@ body{
         font-size: 1.6rem;
     }
 }
+/* Esconde os textos longos e mostra apenas ícones em dispositivos menores */
+@media (max-width: 768px) {
+    .nav-item .text {
+        display: none;
+    }
+    .nav-item .icon {
+        display: inline-block;
+    }
+}
+
+/* Mostra os textos completos em dispositivos maiores */
+@media (min-width: 769px) {
+    .nav-item .icon {
+        display: none;
+    }
+    .nav-item .text {
+        display: inline;
+    }
+}
+/* Imagem responsiva para a seção Sobre Mim */
+.section-about img {
+    max-width: 100%; /* Garante que a largura da imagem não ultrapasse o container */
+    height: auto;    /* Mantém a proporção da imagem */
+    border-radius: 10px; /* Deixa a imagem com bordas arredondadas */
+    margin-top: 20px;
+}
+
+/* Ajustes específicos para dispositivos médios */
+@media (max-width: 992px) {
+    .section-about img {
+        max-width: 100%; /* Reduz o tamanho da imagem para 80% do container */
+        margin: 0 auto; /* Centraliza a imagem */
+        display: block; /* Garante que a imagem seja tratada como bloco */
+    }
+}
+
+/* Ajustes para dispositivos pequenos */
+@media (max-width: 768px) {
+    .section-about img {
+        max-width: 100%; /* Ocupa toda a largura disponível */
+        height: auto;    /* Mantém as proporções */
+    }
+}
