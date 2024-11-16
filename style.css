@@ -7,7 +7,7 @@ body{
 /* Estilização da seção Início */
 .section-inicio {
     min-height: 95vh;
-    background: linear-gradient(135deg, #4b6cb7, #182848); 
+    background: linear-gradient(135deg, #333333, #ffffff); 
     align-items: center;
     justify-content: center;
     color: #fff;
