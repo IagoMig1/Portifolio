@@ -321,6 +321,7 @@ body{
 @media (max-width: 768px) {
     .timeline {
         height: 8px;
+        width: 100%; /* Garantir que a barra ocupe toda a largura */
     }
 
     .timeline-progress {
@@ -329,6 +330,9 @@ body{
 
     .timeline-labels {
         font-size: 0.9rem;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 5px; /* Ajustar o espaçamento */
     }
 
     .timeline-labels span {
@@ -336,11 +340,11 @@ body{
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
     .section-about {
-        width: 90%;
-        padding: 40px 20px;
-        margin-top: 20px;
+        width: 80%; /* Ajustar para 80% em dispositivos médios */
+        padding: 60px 20px;
+        margin-top: 30px;
     }
 
     .section-about img {
@@ -354,7 +358,7 @@ body{
     }
 
     .section-about h3 {
-        font-size: 2.2rem;
+        font-size: 2.5rem;
     }
 }
 
